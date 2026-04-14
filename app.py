@@ -176,7 +176,7 @@ def revenue_trend_chart(df: pd.DataFrame) -> None:
 
 
 def main() -> None:
-    st.title("Healthcare KPI Analysis Dashboard")
+    st.title("Healthcare Patient Analytics Dashboard")
     st.caption(
         "Monitor hospital performance, patient trends, and revenue insights using "
         "real-world healthcare data."
