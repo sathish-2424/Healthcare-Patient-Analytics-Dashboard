@@ -12,7 +12,7 @@ AGE_LABELS = ["Below 20", "20-40", "41-60", "60+"]
 
 
 st.set_page_config(
-    page_title="Healthcare KPI Analysis Dashboard",
+    page_title="Healthcare Patient Analytics Dashboard",
     page_icon=":hospital:",
     layout="wide",
 )
