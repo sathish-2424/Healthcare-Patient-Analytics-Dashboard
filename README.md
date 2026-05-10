@@ -1,113 +1,78 @@
-# Healthcare KPI Analysis
+# Healthcare Patient Analytics Dashboard
 
-## Project Overview
-This project analyzes healthcare data to identify key performance indicators (KPIs) such as revenue, patient count, billing amount, and length of stay. The goal is to transform raw healthcare data into meaningful insights using SQL and Power BI.
+This repository contains a healthcare analytics dataset and two dashboard builds used to explore patient, billing, and operational trends.
 
-The dashboard helps hospitals monitor operational performance and make data-driven decisions.
+The project is centered on a patient-level dataset with 55,501 records and includes both Power BI and Tableau dashboard files for analysis and visualization.
 
----
+## What Is Included
 
-## Tools & Technologies
-- SQL
-- Power BI
-- Excel / CSV Dataset
-- Data Cleaning
-- Data Visualization
+- `healthcare.csv` - source dataset
+- `Healthcare Patient Analytics Dashboard.pbix` - Power BI report
+- `Healthcare Patient Analytics Dashboard.twb` - Tableau workbook
+- `dashboard.png` - dashboard preview image
+- `dashboard2.png` - additional dashboard preview image
 
----
+## Dataset Overview
 
-## Key Performance Indicators (KPIs)
+The dataset includes the following fields:
 
-- Total Revenue: **1 Billion**
-- Total Patients: **40K**
-- Average Billing Amount: **25.54K**
-- Average Length of Stay: **15.51 days**
-
-These KPIs provide a quick overview of hospital performance.
-
----
-
-## Dashboard Analysis
-
-### Revenue by Age Category
-This chart shows revenue generated from different age groups:
-- Below 20
-- 20–40
-- 41–60
-- 60+
-
-It helps identify which age group contributes most to hospital revenue.
-
----
-
-### Admission Type Analysis
-Patient admissions are categorized into:
-
-- Elective
-- Urgent
-- Emergency
-
-This analysis helps hospitals understand patient admission trends.
-
----
-
-### Hospital-wise Billing Amount
-This visualization shows hospitals generating the highest billing revenue.
-
----
-
-### Doctor-wise Billing Amount
-This chart highlights doctors contributing the most to hospital billing.
-
-Example:
-- Michael Smith
-- Robert Smith
-- John Smith
-
----
-
-### Medical Condition Billing Analysis
-This analysis identifies billing amounts for different medical conditions such as:
-
-- Diabetes
-- Obesity
-- Arthritis
-- Hypertension
-
----
-
-## Dashboard Filters
-
-The dashboard includes interactive filters:
-
-- Hospital
+- Patient name
+- Age
 - Gender
-- Insurance Provider
+- Blood type
+- Medical condition
+- Date of admission
+- Doctor
+- Hospital
+- Insurance provider
+- Billing amount
+- Room number
+- Admission type
+- Discharge date
+- Medication
+- Test results
 
-These filters help users explore the data more effectively.
+## Dashboard Focus
 
----
+The dashboards are designed to analyze:
+
+- Revenue and billing patterns
+- Patient volume
+- Average length of stay
+- Admission type distribution
+- Hospital-level performance
+- Doctor-level billing activity
+- Medical condition trends
+- Demographic breakdowns by age and gender
+
+## Example KPIs
+
+The report surfaces summary metrics such as:
+
+- Total revenue
+- Total patients
+- Average billing amount
+- Average length of stay
+
+## How To Use
+
+1. Open `Healthcare Patient Analytics Dashboard.pbix` in Power BI Desktop to view the Power BI report.
+2. Open `Healthcare Patient Analytics Dashboard.twb` in Tableau Desktop to view the Tableau workbook.
+3. Load `healthcare.csv` into Excel, Power BI, Tableau, or another analysis tool if you want to build on the dataset.
 
 ## Project Structure
 
-Healthcare-KPI-Analysis
-│
-├── healthcare_dataset.csv
-├── healthcare_analysis.sql
-├── Healthcare_Dashboard.pbix
-├── dashboard.png
-└── README.md
+```text
+Healthcare-Patient-Analytics-Dashboard/
+|-- dashboard.png
+|-- dashboard2.png
+|-- Healthcare Patient Analytics Dashboard.pbix
+|-- Healthcare Patient Analytics Dashboard.twb
+|-- healthcare.csv
+`-- README.md
+```
 
+## Notes
 
----
-
-## Business Insights
-- Hospitals can identify high revenue medical conditions.
-- Helps analyze patient demographics.
-- Supports hospital performance monitoring.
-- Enables better healthcare decision making.
-
----
-
-## Author
-**Sathish**
+- The dataset appears to be synthetic or anonymized patient data.
+- Some analysis values are calculated inside the dashboard files rather than stored directly in the CSV.
